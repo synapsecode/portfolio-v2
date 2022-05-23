@@ -3,6 +3,10 @@ module.exports = {
   purge: ['./public/index.html', './src/**/*.svelte'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    backdropFilter: {
+      'none': 'none',
+      'blur': 'blur(10px)',
+    },
     extend: {
       animation:{
         blob: "blob 7s infinite"
@@ -28,5 +32,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-filters'),
+  ],
 }
