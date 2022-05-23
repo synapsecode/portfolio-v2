@@ -19,17 +19,16 @@ function getHostOS() {
     return os;
 }
 function getLink(x) {
-    let os = getHostOS();
-    let is_desktop = (os === 'windows' || os === 'linux' || os === 'mac');
-    let is_mobile = (os === 'android' || os === 'ios');
     if(x==='atlas'){
-      if(os === 'windows' || os === 'linux' || os === 'android') os = 'android';
-      if(os === 'mac' || os === 'ios') os = 'ios';
-      x = `${x}-${os}`;
+        let os = getHostOS();
+        if(os === 'windows' || os === 'linux' || os === 'android') os = 'android';
+        if(os === 'mac' || os === 'ios') os = 'ios';
+        x = `${x}-${os}`;
     }
     if(x==='gmail'){
-        if(is_desktop) x = `${x}-direct`;
-        else x = `${x}-mailto`;
+        let os = getHostOS();
+        x = `gmail-direct`;
+        if(os === 'ios' || os === 'android') x = `gmail-mailto`;
     }
     const d = {
       'atlas-android':
