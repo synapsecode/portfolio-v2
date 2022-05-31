@@ -31,21 +31,27 @@ function getLink(x) {
         if(os === 'ios' || os === 'android') x = `gmail-mailto`;
     }
     const d = {
-      'atlas-android':
-        "https://play.google.com/store/apps/details?id=fm.atlas.atlas",
-      'atlas-ios':
-        "https://apps.apple.com/lt/app/atlas-knowledge-curation/id1586021959",
-      "voteflow": "https://github.com/synapsecode/VoteFlow",
-      "schoolcompanion": "https://github.com/synapsecode/SchoolCompanion-App",
-      "dendrite": "https://github.com/synapsecode/Dendrite-1.1",
-      "faceswap": "https://github.com/synapsecode/Flask-FaceSwapWebApp",
-      "microblogger":"https://github.com/synapsecode/Microblogger",
-      "fireauth":"https://pub.dev/packages/fireauth",
-      "firesetup":"https://github.com/synapsecode/FireSetup",
-      "fbct":"https://github.com/synapsecode/FlaskBlueprint-Creation-Tool",
-      "mlblog":"https://ethereumcs.wordpress.com/",
-      "gmail-direct": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manashejmadi@gmail.com",
-      "gmail-mailto":"mailto:manashejmadi@gmail.com"
+        //Projects
+        'atlas-android':
+            "https://play.google.com/store/apps/details?id=fm.atlas.atlas",
+        'atlas-ios':
+            "https://apps.apple.com/lt/app/atlas-knowledge-curation/id1586021959",
+        "voteflow": "https://github.com/synapsecode/VoteFlow",
+        "schoolcompanion": "https://github.com/synapsecode/SchoolCompanion-App",
+        "dendrite": "https://github.com/synapsecode/Dendrite-1.1",
+        "faceswap": "https://github.com/synapsecode/Flask-FaceSwapWebApp",
+        "microblogger":"https://github.com/synapsecode/Microblogger",
+        "fireauth":"https://pub.dev/packages/fireauth",
+        "firesetup":"https://github.com/synapsecode/FireSetup",
+        "fbct":"https://github.com/synapsecode/FlaskBlueprint-Creation-Tool",
+        "mlblog":"https://ethereumcs.wordpress.com/",
+
+        //Socials
+        "github":"https://github.com/synapsecode",
+        "twitter": "https://twitter.com/manashejmadi",
+        "instagram":"https://www.instagram.com/synapse.code/",
+        "gmail-direct": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manashejmadi@gmail.com",
+        "gmail-mailto":"mailto:manashejmadi@gmail.com",
     };
     return d[x];
   }
