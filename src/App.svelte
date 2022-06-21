@@ -3,10 +3,12 @@
   import DataLine from "./Components/DataLine.svelte";
   import Orbs from "./Components/Orbs.svelte";
   import getLink from "./helpers";
-
+  import ToolTipIcon from './Components/ToolTipIcon.svelte'
+  import ToolTip from './Components/ToolTip.svelte';
   let toggle_testimonial = false;
   let toggle_snackbar = false;
 </script>
+
 
 <body class="min-h-screen bg-black overflow-x-hidden">
   <!-- SnackBar -->
@@ -63,6 +65,7 @@
       },4000);
     }}/>
     <p class="text-gray-400 mt-1">Bengaluru, India</p>
+
     <br /><br /><br /><br />
     <p class="text-4xl mb-3">builds</p>
     <ul class="space-y-3 xl:space-y-1">
@@ -140,16 +143,15 @@
       </ul>
       <br /><br />
       <p class="text-4xl mb-3">tools and skills</p>
-      <div class="flex flex-wrap">
-        <img src="images/flutter.png" alt="Flutter" class="h-16 w-16" />
-        <img src="images/python.png" alt="Python" class="h-16 w-16" />
-        <img src="images/js.png" alt="Javascript" class="h-16 w-16" />
-        <img src="images/svelte.png" alt="Svelte" class="h-16 w-16" />
-        <img src="images/java.png" alt="Java" class="h-16 w-16" />
-        <img src="images/ps.png" alt="Photoshop" class="h-16 w-16" />
-        <img src="images/ae.png" alt="AfterEffects" class="h-16 w-16" />
+      <div class="flex flex-wrap"> 
+        <ToolTipIcon img="images/flutter.png" name="flutter"/>
+        <ToolTipIcon img="images/python.png" name="python"/>
+        <ToolTipIcon img="images/js.png" name="javascript"/>
+        <ToolTipIcon img="images/svelte.png" name="svelte"/>
+        <ToolTipIcon img="images/java.png" name="java"/>
+        <ToolTipIcon img="images/ps.png" name="photoshop"/>
+        <ToolTipIcon img="images/ae.png" name="after effects"/>
       </div>
-
       <br /><br />
       <p class="text-4xl mb-5">recommendations</p>
       <p class="text-gray-400 text-lg">
@@ -218,6 +220,15 @@
 <style lang="postcss" global>
   @tailwind base;
   @tailwind components;
+
+  .tooltip {
+    @apply invisible absolute;
+  }
+
+  .has-tooltip:hover .tooltip {
+    @apply visible z-50;
+  }
+
   @tailwind utilities;
   @layer utilities {
     .animation_delay-2000 {

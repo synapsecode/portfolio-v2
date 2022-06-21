@@ -6,7 +6,7 @@ export let link;
 </script>
 
 <li class='text-2xl text-gray-6 '>
-    <a class="text-blue-300" href="{link}" target="_blank">
+    <a class="text-blue-300 hover:text-pink-400" href="{link}" target="_blank">
         {name}
     </a> — {desc} 
     {#if stack != null}
