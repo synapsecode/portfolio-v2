@@ -32,6 +32,13 @@
       on:click={() => {
         dispatch("gmail");
       }}
-    />
+    /><img
+    src="images/linkedin.png"
+    alt="Linkedin Contact"
+    class={commonClass}
+    on:click={() => {
+      goto("linkedin");
+    }}
+  />
   </div>
 </div>

@@ -35,11 +35,11 @@
   /> -->
   <div class="content px-10 xl:px-20 text-white opacity-90">
     <br /><br /><br /><br /><br />
-    <img src="images/profile.webp" class="rounded-2xl h-40 w-40" alt="" />
+    <img src="images/profile.png" class="rounded-2xl h-40 w-40" alt="" />
     <!-- OLDIMG: https://pbs.twimg.com/profile_images/1518524395110940672/6SsgkQk-_400x400.jpg -->
     <h1 class="text-4xl mb-1 mt-4 font-bold">Manas Hejmadi</h1>
     <p class="text-md opacity-50">
-      18. Flutter Freelance App Developer. Learning Web3
+      19. Freelance Mobile App Developer (Flutter). Enjoyer of puns
     </p>
     <div class="flex mt-1">
       <!-- <button
@@ -212,7 +212,7 @@
       
 
       <div class="mb-20" />
-      <p class="text-gray-300 mb-10">(c) Manas Hejmadi 2022</p>
+      <p class="text-gray-300 mb-10">(c) Manas Hejmadi 2023</p>
     </div>
   </div></body
 >

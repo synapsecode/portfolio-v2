@@ -19,16 +19,16 @@ function getHostOS() {
     return os;
 }
 function getLink(x) {
-    if(x==='atlas'){
+    if (x === 'atlas') {
         let os = getHostOS();
-        if(os === 'windows' || os === 'linux' || os === 'android') os = 'android';
-        if(os === 'mac' || os === 'ios') os = 'ios';
+        if (os === 'windows' || os === 'linux' || os === 'android') os = 'android';
+        if (os === 'mac' || os === 'ios') os = 'ios';
         x = `${x}-${os}`;
     }
-    if(x==='gmail'){
+    if (x === 'gmail') {
         let os = getHostOS();
         x = `gmail-direct`;
-        if(os === 'ios' || os === 'android') x = `gmail-mailto`;
+        if (os === 'ios' || os === 'android') x = `gmail-mailto`;
     }
     const d = {
         //Projects
@@ -40,19 +40,20 @@ function getLink(x) {
         "schoolcompanion": "https://github.com/synapsecode/SchoolCompanion-App",
         "dendrite": "https://github.com/synapsecode/Dendrite-1.1",
         "faceswap": "https://github.com/synapsecode/Flask-FaceSwapWebApp",
-        "microblogger":"https://github.com/synapsecode/Microblogger",
-        "fireauth":"https://pub.dev/packages/fireauth",
-        "firesetup":"https://github.com/synapsecode/FireSetup",
-        "fbct":"https://github.com/synapsecode/FlaskBlueprint-Creation-Tool",
-        "mlblog":"https://ethereumcs.wordpress.com/",
+        "microblogger": "https://github.com/synapsecode/Microblogger",
+        "fireauth": "https://pub.dev/packages/fireauth",
+        "firesetup": "https://github.com/synapsecode/FireSetup",
+        "fbct": "https://github.com/synapsecode/FlaskBlueprint-Creation-Tool",
+        "mlblog": "https://ethereumcs.wordpress.com/",
 
         //Socials
-        "github":"https://github.com/synapsecode",
-        "twitter": "https://twitter.com/manashejmadi",
-        "instagram":"https://www.instagram.com/synapse.code/",
+        "github": "https://github.com/synapsecode",
+        "twitter": "https://twitter.com/manas_hejmadi",
+        "instagram": "https://www.instagram.com/synapse.code/",
         "gmail-direct": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manashejmadi@gmail.com",
-        "gmail-mailto":"mailto:manashejmadi@gmail.com",
+        "gmail-mailto": "mailto:manashejmadi@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/manas-hejmadi-0b3920183",
     };
     return d[x];
-  }
+}
 export default getLink; 
