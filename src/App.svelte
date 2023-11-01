@@ -3,25 +3,32 @@
   import DataLine from "./Components/DataLine.svelte";
   import Orbs from "./Components/Orbs.svelte";
   import getLink from "./helpers";
-  import ToolTipIcon from './Components/ToolTipIcon.svelte'
-  import ToolTip from './Components/ToolTip.svelte';
+  import ToolTipIcon from "./Components/ToolTipIcon.svelte";
+  import ToolTip from "./Components/ToolTip.svelte";
   let toggle_testimonial = false;
   let toggle_snackbar = false;
 </script>
 
-
 <body class="min-h-screen bg-black overflow-x-hidden">
   <!-- SnackBar -->
-  <div class="{toggle_snackbar ? 'block':'hidden'} absolute w-[300px] bottom-10 bg-white-100 left-[calc((100%-300px)/2)] z-40 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 rounded-md text-white p-3 text-center border border-gray-400">
+  <div
+    class="{toggle_snackbar
+      ? 'block'
+      : 'hidden'} absolute w-[300px] bottom-10 bg-white-100 left-[calc((100%-300px)/2)] z-40 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 rounded-md text-white p-3 text-center border border-gray-400"
+  >
     <p class="text-md mb-3">manashejmadi@gmail.com</p>
-    <button on:click={()=>window.open(getLink('gmail'), '_blank')} type="button" class="py-2.5 px-10 mr-2 mb-2 text-sm font-medium text-black focus:outline-none bg-gray-300 rounded-lg hover:bg-gray-600 hover:text-white focus:z-10">
+    <button
+      on:click={() => window.open(getLink("gmail"), "_blank")}
+      type="button"
+      class="py-2.5 px-10 mr-2 mb-2 text-sm font-medium text-black focus:outline-none bg-gray-300 rounded-lg hover:bg-gray-600 hover:text-white focus:z-10"
+    >
       Send Mail
     </button>
   </div>
   <!-- ColorfulOrbs -->
   <div class="relative -z-40">
     <div
-      class="absolute top-80 -left-10 w-96 h-96 bg-purple-900 opacity-40 rounded-full filter blur-3xl  animate-blob"
+      class="absolute top-80 -left-10 w-96 h-96 bg-purple-900 opacity-40 rounded-full filter blur-3xl animate-blob"
     />
     <div
       class="absolute top-10 -right-0 w-96 h-96 bg-pink-700 opacity-20 rounded-full filter blur-3xl animate-blob animation-delay-2000"
@@ -51,30 +58,61 @@
       <button
         class="py-2 my-2 mr-2 px-3 bg-transparent hover:bg-white rounded-md border border-gray-200 text-white hover:text-black transition ease-in-out delay-75"
         on:click={() => {
-          window.open(getLink('gmail'),'_blank').focus();
+          window.open(getLink("gmail"), "_blank").focus();
         }}
       >
         Work With Me
       </button>
+      <button
+      class="py-2 my-2 mr-2 px-3 bg-transparent hover:bg-white rounded-md border border-gray-200 text-white hover:text-black transition ease-in-out delay-75"
+      on:click={() => {
+        window.open("images/MANAS HEJMADI.pdf", "_blank").focus();
+      }}
+    >
+      Download Resume
+    </button>
     </div>
-    <SocialSection on:gmail={()=>{
-      if(toggle_snackbar) return;
-      toggle_snackbar = !toggle_snackbar;
-      setTimeout(()=>{
+    <SocialSection
+      on:gmail={() => {
+        if (toggle_snackbar) return;
         toggle_snackbar = !toggle_snackbar;
-      },4000);
-    }}/>
+        setTimeout(() => {
+          toggle_snackbar = !toggle_snackbar;
+        }, 4000);
+      }}
+    />
     <p class="text-gray-400 mt-1">Bengaluru, India</p>
 
     <br /><br /><br /><br />
-    <p class="text-4xl mb-3">builds</p>
+   
+    <p class="text-4xl mb-3">experience</p>
     <ul class="space-y-3 xl:space-y-1">
       <DataLine
-        name="Atlas Knowledge"
-        desc="collect, summarise and share knowledge rich content from around the web."
-        link={getLink("atlas")}
-        stack="Flutter"
-      />
+      name="Crezam"
+      desc="The new age professional network for the new age talent! (coming soon)"
+      link={getLink("crezam")}
+      role="Lead Mobile Developer"
+      stack="2022-Present"
+    />
+    <DataLine
+      name="Ratofy"
+      desc="a community-building platform leveraging the power of Web3 and AI"
+      link={getLink("ratofy")}
+      role="Head of Product"
+      stack="2023-Present"
+    />
+    <DataLine
+    name="Atlas Knowledge"
+    desc="collect, summarise and share knowledge rich content from around the web."
+    link={getLink("atlas")}
+    role="Lead Mobile Developer"
+    stack="2021"
+  />
+    </ul>
+    <br /><br />
+
+    <p class="text-4xl mb-3">builds</p>
+    <ul class="space-y-3 xl:space-y-1">
       <DataLine
         name="Microblogger"
         desc="a social media and microblogging platform"
@@ -82,8 +120,14 @@
         stack="Flutter & Flask"
       />
       <DataLine
-        name="Voteflow 2.0"
-        desc="voting made easy!"
+      name="FlutterGym"
+      desc="A feature-rich platform for fitness enthusiasts"
+      link={getLink("fluttergym")}
+      stack="Flutter & Flask"
+    />
+      <DataLine
+        name="Voteflow"
+        desc="a complete election system devised for schools, colleges and other institutions"
         link={getLink("voteflow")}
         stack="Flask"
       />
@@ -93,12 +137,12 @@
         link={getLink("schoolcompanion")}
         stack="Flutter & Flask"
       />
-      <DataLine
+      <!-- <DataLine
         name="Dendrite"
         desc="integrating the blockchain and the supply chain!"
         link={getLink("dendrite")}
         stack="Flask & BigchainDB"
-      />
+      /> -->
       <DataLine
         name="FaceSwap"
         desc="swap faces over the web!"
@@ -115,7 +159,7 @@
     <!-- ColorfulOrbs -->
     <div class="relative">
       <div
-        class="absolute -right-10 w-96 h-96 bg-purple-900 opacity-30 rounded-full filter blur-3xl  animate-blob"
+        class="absolute -right-10 w-96 h-96 bg-purple-900 opacity-30 rounded-full filter blur-3xl animate-blob"
       />
       <div
         class="absolute top-10 -right-0 w-96 h-96 bg-pink-700 opacity-10 rounded-full filter blur-3xl animate-blob animation-delay-2000"
@@ -143,14 +187,14 @@
       </ul>
       <br /><br />
       <p class="text-4xl mb-3">tools and skills</p>
-      <div class="flex flex-wrap"> 
-        <ToolTipIcon img="images/flutter.png" name="flutter"/>
-        <ToolTipIcon img="images/python.png" name="python"/>
-        <ToolTipIcon img="images/js.png" name="javascript"/>
-        <ToolTipIcon img="images/svelte.png" name="svelte"/>
-        <ToolTipIcon img="images/java.png" name="java"/>
-        <ToolTipIcon img="images/ps.png" name="photoshop"/>
-        <ToolTipIcon img="images/ae.png" name="after effects"/>
+      <div class="flex flex-wrap">
+        <ToolTipIcon img="images/flutter.png" name="flutter" />
+        <ToolTipIcon img="images/python.png" name="python" />
+        <ToolTipIcon img="images/js.png" name="javascript" />
+        <ToolTipIcon img="images/svelte.png" name="svelte" />
+        <ToolTipIcon img="images/java.png" name="java" />
+        <ToolTipIcon img="images/ps.png" name="photoshop" />
+        <ToolTipIcon img="images/ae.png" name="after effects" />
       </div>
       <br /><br />
       <p class="text-4xl mb-5">recommendations</p>
@@ -183,19 +227,33 @@
       <div class="h4 text-left mt-3 mr-2 text-blue-200">
         Harshal Kokane (Atlas Knowledge)
       </div>
-    
-      <p class="text-blue-200 mt-10 cursor-pointer opacity-80 hover:text-blue-400" on:click={()=>{
-        toggle_testimonial = !toggle_testimonial;
-      }}>show {toggle_testimonial ? 'less' : 'more'} </p>
 
-      <div class="hidden-reviews mt-5 {toggle_testimonial ? 'block':'hidden'}">
+      <p
+        class="text-blue-200 mt-10 cursor-pointer opacity-80 hover:text-blue-400"
+        on:click={() => {
+          toggle_testimonial = !toggle_testimonial;
+        }}
+      >
+        show {toggle_testimonial ? "less" : "more"}
+      </p>
+
+      <div
+        class="hidden-reviews mt-5 {toggle_testimonial ? 'block' : 'hidden'}"
+      >
         <p class="text-gray-400 text-lg">
-          Manas was pleasure to work with! He is so kind and truly awesome at what he does. He delivered a product that I was pleased with. He made sure to communicate his progress and kept me informed throughout this process. He was so helpful in making any changes that I asked. He was also very helpful in explaining things that I had questions about, He is very timely and always exceeded my expectations. He built the Backend very professionally and will definitely be using his services again as well as recommending him to all of my family and friends.
+          Manas was pleasure to work with! He is so kind and truly awesome at
+          what he does. He delivered a product that I was pleased with. He made
+          sure to communicate his progress and kept me informed throughout this
+          process. He was so helpful in making any changes that I asked. He was
+          also very helpful in explaining things that I had questions about, He
+          is very timely and always exceeded my expectations. He built the
+          Backend very professionally and will definitely be using his services
+          again as well as recommending him to all of my family and friends.
         </p>
         <div class="h4 text-left mt-3 mr-2 text-blue-200">
           Ismail Abdirahman (Freelance Client)
         </div>
-        <br><br>
+        <br /><br />
         <p class="text-gray-400 text-lg">
           Manas was given a tough and challenging job of creating an innovative
           software application for the school elections. His creativity and
@@ -206,10 +264,7 @@
         <div class="h4 text-left mt-3 mr-2 text-blue-200">
           Susan Roy (Principal, St. Paul's English School)
         </div>
-  
       </div>
-
-      
 
       <div class="mb-20" />
       <p class="text-gray-300 mb-10">(c) Manas Hejmadi 2023</p>

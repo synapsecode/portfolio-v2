@@ -32,6 +32,8 @@ function getLink(x) {
     }
     const d = {
         //Projects
+        'crezam': "https://crezam.com/",
+        'ratofy': "https://play.google.com/store/apps/details?id=com.ratofy.app.ratofy",
         'atlas-android':
             "https://play.google.com/store/apps/details?id=fm.atlas.atlas",
         'atlas-ios':
@@ -41,6 +43,7 @@ function getLink(x) {
         "dendrite": "https://github.com/synapsecode/Dendrite-1.1",
         "faceswap": "https://github.com/synapsecode/Flask-FaceSwapWebApp",
         "microblogger": "https://github.com/synapsecode/Microblogger",
+        "fluttergym": "https://www.instagram.com/tv/CME92KOAY3Y/",
         "fireauth": "https://pub.dev/packages/fireauth",
         "firesetup": "https://github.com/synapsecode/FireSetup",
         "fbct": "https://github.com/synapsecode/FlaskBlueprint-Creation-Tool",
