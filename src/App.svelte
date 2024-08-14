@@ -46,7 +46,8 @@
     <!-- OLDIMG: https://pbs.twimg.com/profile_images/1518524395110940672/6SsgkQk-_400x400.jpg -->
     <h1 class="text-4xl mb-1 mt-4 font-bold">Manas Hejmadi</h1>
     <p class="text-md opacity-50">
-      19. Freelance Mobile App Developer (Flutter). Enjoyer of puns
+      20. Freelance Software Developer with an expertise in Flutter. Enjoyer of
+      puns
     </p>
     <div class="flex mt-1">
       <!-- <button
@@ -64,13 +65,13 @@
         Work With Me
       </button>
       <button
-      class="py-2 my-2 mr-2 px-3 bg-transparent hover:bg-white rounded-md border border-gray-200 text-white hover:text-black transition ease-in-out delay-75"
-      on:click={() => {
-        window.open("images/MANAS HEJMADI.pdf", "_blank").focus();
-      }}
-    >
-      Download Resume
-    </button>
+        class="py-2 my-2 mr-2 px-3 bg-transparent hover:bg-white rounded-md border border-gray-200 text-white hover:text-black transition ease-in-out delay-75"
+        on:click={() => {
+          window.open("images/MANAS_RESUME.pdf", "_blank").focus();
+        }}
+      >
+        Download Resume
+      </button>
     </div>
     <SocialSection
       on:gmail={() => {
@@ -84,30 +85,30 @@
     <p class="text-gray-400 mt-1">Bengaluru, India</p>
 
     <br /><br /><br /><br />
-   
+
     <p class="text-4xl mb-3">experience</p>
     <ul class="space-y-3 xl:space-y-1">
       <DataLine
-      name="Crezam"
-      desc="The new age professional network for the new age talent! (coming soon)"
-      link={getLink("crezam")}
-      role="Lead Mobile Developer"
-      stack="2022-Present"
-    />
-    <DataLine
-      name="Ratofy"
-      desc="a community-building platform leveraging the power of Web3 and AI"
-      link={getLink("ratofy")}
-      role="Head of Product"
-      stack="2023-Present"
-    />
-    <DataLine
-    name="Atlas Knowledge"
-    desc="collect, summarise and share knowledge rich content from around the web."
-    link={getLink("atlas")}
-    role="Lead Mobile Developer"
-    stack="2021"
-  />
+        name="Crezam"
+        desc="The new age professional network for the new age talent! (coming soon)"
+        link={getLink("crezam")}
+        role="Lead Mobile Developer"
+        stack="2022-Present"
+      />
+      <DataLine
+        name="Ratofy"
+        desc="a community-building platform leveraging the power of Web3 and AI"
+        link={getLink("ratofy")}
+        role="Head of Product"
+        stack="2023-Present"
+      />
+      <DataLine
+        name="Atlas Knowledge"
+        desc="collect, summarise and share knowledge rich content from around the web."
+        link={getLink("atlas")}
+        role="Lead Mobile Developer"
+        stack="2021"
+      />
     </ul>
     <br /><br />
 
@@ -120,11 +121,11 @@
         stack="Flutter & Flask"
       />
       <DataLine
-      name="FlutterGym"
-      desc="A feature-rich platform for fitness enthusiasts"
-      link={getLink("fluttergym")}
-      stack="Flutter & Flask"
-    />
+        name="FlutterGym"
+        desc="A feature-rich platform for fitness enthusiasts"
+        link={getLink("fluttergym")}
+        stack="Flutter & Flask"
+      />
       <DataLine
         name="Voteflow"
         desc="a complete election system devised for schools, colleges and other institutions"
@@ -267,7 +268,9 @@
       </div>
 
       <div class="mb-20" />
-      <p class="text-gray-300 mb-10">(c) Manas Hejmadi 2023</p>
+      <p class="text-gray-300 mb-10">
+        (c) Manas Hejmadi {new Date().getFullYear()}
+      </p>
     </div>
   </div></body
 >
