@@ -45,6 +45,7 @@ function getLink(x) {
         "microblogger": "https://github.com/synapsecode/Microblogger",
         "fluttergym": "https://www.instagram.com/tv/CME92KOAY3Y/",
         "fireauth": "https://pub.dev/packages/fireauth",
+        "ffpns": "https://github.com/synapsecode/ffpns",
         "firesetup": "https://github.com/synapsecode/FireSetup",
         "fbct": "https://github.com/synapsecode/FlaskBlueprint-Creation-Tool",
         "mlblog": "https://ethereumcs.wordpress.com/",

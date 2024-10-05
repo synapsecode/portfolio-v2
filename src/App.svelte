@@ -70,7 +70,7 @@
           window.open("images/MANAS_RESUME.pdf", "_blank").focus();
         }}
       >
-        Download Resume
+        View Resume
       </button>
     </div>
     <SocialSection
@@ -171,9 +171,14 @@
       <p class="text-4xl mb-3">other work</p>
       <ul class="space-y-3 xl:space-y-1">
         <DataLine
-          name="Fireauth"
-          desc="simplify firebase authentication in flutter using this package"
-          link={getLink("fireauth")}
+          name="FFPNS"
+          desc="A Flutter Package that simplifies the usage of in-app push notifications"
+          link={getLink("ffpns")}
+        />
+        <DataLine
+          name="Machine Learning Blog"
+          desc="text based easy to understand Machine Learning tutorials for beginners"
+          link={getLink("mlblog")}
         />
         <DataLine
           name="Flask Blueprints Creation Tool"
@@ -181,9 +186,9 @@
           link={getLink("fbct")}
         />
         <DataLine
-          name="Machine Learning Blog"
-          desc="text based easy to understand Machine Learning tutorials for beginners"
-          link={getLink("mlblog")}
+          name="Fireauth"
+          desc="simplify firebase authentication in flutter using this package"
+          link={getLink("fireauth")}
         />
       </ul>
       <br /><br />
