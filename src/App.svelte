@@ -46,7 +46,7 @@
     <!-- OLDIMG: https://pbs.twimg.com/profile_images/1518524395110940672/6SsgkQk-_400x400.jpg -->
     <h1 class="text-4xl mb-1 mt-4 font-bold">Manas Hejmadi</h1>
     <p class="text-md opacity-50">
-      20. Freelance Software Developer with an expertise in Flutter. Enjoyer of
+      21. Freelance Software Developer with an expertise in Flutter. Enjoyer of
       puns
     </p>
     <div class="flex mt-1">
@@ -90,17 +90,24 @@
     <ul class="space-y-3 xl:space-y-1">
       <DataLine
         name="Crezam"
-        desc="The new age professional network for the new age talent! (coming soon)"
+        desc="an AI based talent hiring and assessment platform"
         link={getLink("crezam")}
         role="Lead Mobile Developer"
         stack="2022-Present"
+      />
+      <DataLine
+        name="FitChoice World"
+        desc="a fitness and wellness centric daily-pass booking application"
+        link={getLink("ratofy")}
+        role="Mobile Lead"
+        stack="2024-Present"
       />
       <DataLine
         name="Ratofy"
         desc="a community-building platform leveraging the power of Web3 and AI"
         link={getLink("ratofy")}
         role="Head of Product"
-        stack="2023-Present"
+        stack="2023-2024"
       />
       <DataLine
         name="Atlas Knowledge"
