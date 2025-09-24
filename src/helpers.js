@@ -49,6 +49,11 @@ function getLink(x) {
         "firesetup": "https://github.com/synapsecode/FireSetup",
         "fbct": "https://github.com/synapsecode/FlaskBlueprint-Creation-Tool",
         "mlblog": "https://ethereumcs.wordpress.com/",
+        "fcw": "https://www.fitchoiceworld.com",
+        "mitmshield": "https://github.com/synapsecode/mitmshield",
+        "xocr": "https://github.com/synapsecode/xocr",
+        "kolamverse": "https://github.com/synapsecode/kolamcreate",
+        "trashtrace": "https://github.com/synapsecode/SIH24",
 
         //Socials
         "github": "https://github.com/synapsecode",

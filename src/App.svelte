@@ -46,7 +46,7 @@
     <!-- OLDIMG: https://pbs.twimg.com/profile_images/1518524395110940672/6SsgkQk-_400x400.jpg -->
     <h1 class="text-4xl mb-1 mt-4 font-bold">Manas Hejmadi</h1>
     <p class="text-md opacity-50">
-      21. Freelance Software Developer with an expertise in Flutter. Enjoyer of
+      Software Developer with an expertise in Flutter and Python. Enjoyer of
       puns
     </p>
     <div class="flex mt-1">
@@ -90,30 +90,37 @@
     <ul class="space-y-3 xl:space-y-1">
       <DataLine
         name="Crezam"
-        desc="an AI based talent hiring and assessment platform"
+        desc="An AI-powered platform that transforms how talent is discovered, developed, and deployed."
         link={getLink("crezam")}
-        role="Lead Mobile Developer"
+        role="SDE"
         stack="2022-Present"
+      />
+      <DataLine
+        name="APIDash"
+        desc="an AI-powered open-source cross-platform API Client built using Flutter"
+        link={getLink("crezam")}
+        role="Google Summer of Code 2025 Contributor"
+        stack="May 2025 - Sept 2025"
       />
       <DataLine
         name="FitChoice World"
         desc="a fitness and wellness centric daily-pass booking application"
-        link={getLink("ratofy")}
-        role="Mobile Lead"
-        stack="2024-Present"
+        link={getLink("fcw")}
+        role="Lead Mobile Developer"
+        stack="Sept 2024 - Apr 2025"
       />
       <DataLine
         name="Ratofy"
         desc="a community-building platform leveraging the power of Web3 and AI"
         link={getLink("ratofy")}
-        role="Head of Product"
-        stack="2023-2024"
+        role="Mobile Developer"
+        stack="Mar 2023 - Jun 2024"
       />
       <DataLine
         name="Atlas Knowledge"
         desc="collect, summarise and share knowledge rich content from around the web."
         link={getLink("atlas")}
-        role="Lead Mobile Developer"
+        role="Freelance Mobile Developer"
         stack="2021"
       />
     </ul>
@@ -122,8 +129,32 @@
     <p class="text-4xl mb-3">builds</p>
     <ul class="space-y-3 xl:space-y-1">
       <DataLine
+        name="MITMShield"
+        desc="a man-in-the-middle proxy with steganographic watermarking to secure intellectual property"
+        link={getLink("mitmshield")}
+        stack="Python, mitmproxy"
+      />
+      <DataLine
+        name="XOCR"
+        desc="Apple's VisionKit that has been specifically optimized to handle indentations, tab spacing and other code related artefacts"
+        link={getLink("xocr")}
+        stack="Swift, VisionKit"
+      />
+      <DataLine
+        name="KolamVerse"
+        desc="A platform that enables users to generate kolams with AI or learn to draw them through animated tutorials, with support for uploading custom designs"
+        link={getLink("kolamverse")}
+        stack="Python, FastAPI, OpenCV, Turtle"
+      />
+      <DataLine
+        name="TrashTrace"
+        desc="A gamified QR Incentivized waste disposal mechanism and a lot more"
+        link={getLink("trashtrace")}
+        stack="Swift, VisionKit"
+      />
+      <DataLine
         name="Microblogger"
-        desc="a social media and microblogging platform"
+        desc="a feature-packed social media and microblogging platform"
         link={getLink("microblogger")}
         stack="Flutter & Flask"
       />
