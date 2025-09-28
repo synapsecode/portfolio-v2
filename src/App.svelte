@@ -98,7 +98,7 @@
       <DataLine
         name="APIDash"
         desc="an AI-powered open-source cross-platform API Client built using Flutter"
-        link={getLink("crezam")}
+        link={getLink("apidash")}
         role="Google Summer of Code 2025 Contributor"
         stack="May 2025 - Sept 2025"
       />

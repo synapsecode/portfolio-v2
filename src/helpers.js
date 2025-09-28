@@ -54,7 +54,7 @@ function getLink(x) {
         "xocr": "https://github.com/synapsecode/xocr",
         "kolamverse": "https://github.com/synapsecode/kolamcreate",
         "trashtrace": "https://github.com/synapsecode/SIH24",
-
+        "apidash": "https://summerofcode.withgoogle.com/programs/2025/projects/hhUUM8wl",
         //Socials
         "github": "https://github.com/synapsecode",
         "twitter": "https://twitter.com/manas_hejmadi",
